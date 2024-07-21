@@ -1,0 +1,20 @@
+{
+  "name": "mc-main",
+  "version": "1.0.0",
+  "description": "mc-main",
+  "repository": "https://github.com/alexarroyoduque/master-chapas",
+  "main": "mc-main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlexArroyoDuque",
+  "license": "licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "lit": "^2.0.0",
+    "papaparse": "^5.4.1"
+  },
+  "devDependencies": {
+    "polymer-cli": "1.9.11"
+  }
+}

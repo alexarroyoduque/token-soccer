@@ -1,0 +1,29 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/mc-main.js",
+  "fragments": ["src/mc-world-welcome.js"],
+  "npm": true,
+  "moduleResolution": "node",
+  "sources": [
+    "src/**/*",
+    "manifest/**",
+    "manifest.json",
+    "package.json"
+  ],
+  "extraDependencies": [
+    "robots.txt",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    {
+      "bundle": true,
+      "js": {
+        "minify": true,
+        "compile": "es2015",
+        "module": true
+      },
+      "addServiceWorker": false,
+      "addPushManifest": true
+    }
+  ]
+}

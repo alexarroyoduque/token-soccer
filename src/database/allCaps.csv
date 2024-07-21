@@ -1,0 +1,41 @@
+media,id,name,type,imageUrl,team,positionFavorite,positionActive,price,level,points,durability,condition,stats.stability,stats.steal,stats.pass,stats.control,stats.speed,stats.shoot,stats.effect,stats.goalKeeping
+62,000,Bezoya,water,src/images/bezoya.jpg,team A,goalkeeper,reserve,3,1,0,99,99,75,70,72,50,50,40,68,76
+59,001,Mahou Clásica,beer,src/images/mahou-clasica.jpg,team A,defender central,reserve,3,1,0,99,99,76,76,68,60,69,36,60,30
+65,002,Mahou barrica,beer,src/images/mahou-barrica.jpg,team B,defender central,reserve,3,1,0,99,99,78,78,72,65,74,60,65,32
+61,003,Mahou Cinco Estrellas,beer,src/images/mahou-cinco-estrellas.jpg,team A,lateral left,reserve,3,1,0,99,99,76,75,70,65,69,50,60,28
+65,004,Vichy Catalan,water,src/images/vichy-catalan.jpg,team B,lateral right,reserve,3,1,0,99,99,78,78,72,65,74,60,65,33
+68,005,San Miguel,beer,src/images/san-miguel.jpg,team A,midfielder defensive,reserve,5,1,0,99,99,70,75,80,74,78,68,70,30
+68,006,Kas naranja,soda,src/images/kas-naranja.jpg,team B,midfielder defensive,reserve,5,1,0,99,99,70,75,82,74,78,70,72,30
+68,007,Reserva 1906,beer,src/images/reserva-1906.jpg,team B,midfielder offensive,reserve,4,1,0,99,99,72,68,78,70,80,70,75,31
+66,008,Estrella Galicia,beer,src/images/estrella-galicia.jpg,team A,midfielder offensive,reserve,4,1,0,99,99,70,65,75,70,77,68,80,28
+69,009,Pepsi,soda,src/images/pepsi.jpg,team A,forward,reserve,4,1,0,99,99,65,65,80,70,85,75,82,30
+74,010,Cruzcampo,beer,src/images/cruzcampo.jpg,team A,forward,reserve,4,1,0,99,99,80,78,76,82,80,79,86,35
+63,011,Lanjaron,water,src/images/lanjaron.jpg,team A,goalkeeper,reserve,3,1,0,99,99,70,68,72,50,55,48,70,73
+71,012,San Miguel Tostada,beer,src/images/san-miguel-tostada.jpg,team B,winger,reserve,4,1,0,99,99,68,70,85,72,88,75,80,33
+77,013,Alhambra,beer,src/images/alhambra.jpg,team A,forward,reserve,4,1,0,99,99,80,82,90,80,90,80,85,36
+70,014,Font Vella,water,src/images/font-vella.jpg,team A,winger,reserve,4,1,0,99,99,65,68,85,70,86,75,80,32
+68,015,Águila,beer,src/images/aguila.jpg,team A,midfielder defensive,reserve,5,1,0,99,99,70,75,80,75,78,68,70,31
+67,016,La Casera,soda,src/images/la-casera.jpg,team B,midfielder offensive,reserve,4,1,0,99,99,72,70,75,70,77,68,75,30
+63,017,Aquabona,water,src/images/aquabona.jpg,team B,goalkeeper,reserve,3,1,0,99,99,70,68,72,50,55,50,70,72
+70,018,Fanta naranja,soda,src/images/fanta-naranja.jpg,team B,winger,reserve,4,1,0,99,99,65,70,85,70,86,75,80,32
+68,019,Mahou Maestra,beer,src/images/mahou-maestra.jpg,team A,midfielder defensive,reserve,5,1,0,99,99,70,75,80,75,78,68,70,30
+63,020,Aquabona,water,src/images/aquabona.jpg,team A,goalkeeper,reserve,3,1,0,99,99,70,68,72,50,55,50,70,72
+64,021,Aquarius,sports drink,src/images/aquarius.jpg,team A,defender central,reserve,3,1,0,99,99,78,75,70,65,74,60,65,28
+58,022,Voll Damm,beer,src/images/voll-damm.jpg,team B,defender central,reserve,3,1,0,99,99,70,68,72,50,55,50,70,30
+65,023,Schweppes limón,soda,src/images/schweppes-limon.jpg,team B,lateral left,reserve,3,1,0,99,99,78,78,72,65,74,60,65,30
+72,024,Heineken,beer,src/images/heineken.jpg,team A,lateral right,reserve,4,1,0,99,99,78,78,72,65,74,60,65,33
+68,025,Kas Bitter,soda,src/images/kas-bitter.jpg,team A,midfielder defensive,reserve,5,1,0,99,99,70,75,82,74,78,70,72,30
+64,026,Seven Up,soda,src/images/seven-up.jpg,team B,midfielder defensive,reserve,4,1,0,99,99,70,75,82,74,78,70,72,30
+67,027,Horchata de Chufa,horchata,src/images/horchata-de-chufa.jpg,team B,midfielder offensive,reserve,4,1,0,99,99,72,70,75,70,77,68,75,30
+68,028,Nordic,soda,src/images/nordic.jpg,team A,midfielder offensive,reserve,4,1,0,99,99,72,68,78,70,80,70,75,31
+77,029,Schweppes naranja,soda,src/images/schweppes-naranja.jpg,team A,forward,reserve,4,1,0,99,99,80,82,90,80,90,80,85,36
+71,030,Monster,energy drink,src/images/monster.jpg,team A,forward,reserve,4,1,0,99,99,80,82,90,80,90,80,85,36
+66,031,Aquafina,water,src/images/aquafina.jpg,team B,goalkeeper,reserve,3,1,0,99,99,70,68,75,50,55,50,70,72
+63,032,Sprite,soda,src/images/sprite.jpg,team B,defender central,reserve,3,1,0,99,99,78,75,70,65,74,60,65,30
+68,033,Corona,beer,src/images/corona.jpg,team B,midfielder offensive,reserve,4,1,0,99,99,72,68,78,70,80,70,75,31
+65,034,Gatorade,sports drink,src/images/gatorade.jpg,team B,midfielder defensive,reserve,5,1,0,99,99,70,75,80,75,78,68,70,31
+67,035,Fanta Limón,soda,src/images/fanta-limon.jpg,team A,winger,reserve,4,1,0,99,99,65,68,85,70,86,75,80,32
+70,036,Schweppes Tonic,soda,src/images/schweppes-tonic.jpg,team B,winger,reserve,4,1,0,99,99,65,68,85,70,86,75,80,32
+71,037,Agua de Valencia,water,src/images/agua-de-valencia.jpg,team B,winger,reserve,4,1,0,99,99,68,70,85,72,88,75,80,33
+70,038,Fiji,water,src/images/fiji.jpg,team A,goalkeeper,reserve,3,1,0,99,99,70,68,72,50,55,48,70,73
+69,039,Red Bull,energy drink,src/images/red-bull.jpg,team A,winger,reserve,4,1,0,99,99,65,70,85,70,86,75,80,32
