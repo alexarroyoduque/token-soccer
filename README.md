@@ -1,6 +1,6 @@
-# master-chapas
+# TOKEN SOCCER
 
-[https://master-chapas.firebaseapp.com](https://master-chapas.firebaseapp.com)
+Prototipo de juego simulador de fútbol chapas inspirado en PC Fútbol
 
 ## Quick start
 
