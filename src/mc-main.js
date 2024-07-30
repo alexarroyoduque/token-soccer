@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import './mc-language.js';
 import './mc-main-menu.js';
 import './mc-world-welcome.js';
 import './mc-world-new.js';
@@ -19,7 +20,7 @@ export class McMain extends LitElement {
 
   constructor() {
     super();
-    this.currentPage = 'main';
+    this.currentPage = 'language';
     this.payload = {};
     
   }
@@ -66,7 +67,8 @@ export class McMain extends LitElement {
     return html`
 
       <section>
-        ${this.currentPage === 'menu' || this.currentPage === 'main' ? html`<mc-main-menu @navigate="${(e) => this._navigate(e.detail.page)}"></mc-main-menu>` : ''}
+        ${this.currentPage === 'language' ? html`<mc-language @navigate="${(e) => this._navigate(e.detail.page)}"></mc-language>` : ''}
+        ${this.currentPage === 'main' ? html`<mc-main-menu @navigate="${(e) => this._navigate(e.detail.page)}"></mc-main-menu>` : ''}
         ${this.currentPage === 'worldWelcome' ? html`<mc-world-welcome @navigate="${(e) => this._navigate(e.detail.page)}"></mc-world-welcome>` : ''}
         ${this.currentPage === 'worldTourNew' ? html`<mc-world-new @navigate="${(e) => this._navigate(e.detail.page)}"></mc-world-new>` : ''}
         ${this.currentPage === 'worldTourMain' ? html`<mc-world-main @navigate="${(e) => this._navigate(e.detail.page)}"></mc-world-main>` : ''}

@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import {t} from './helpers/helpers.js'
 
 import './mc-button.js';
 
@@ -162,8 +163,8 @@ export class McCardDuel extends LitElement {
           <div class="media">${this.mediaCap}</div>
         </div>
         <div class="middle-section">
-          <div>Media del equipo rival ${this.mediaSquad}</div>
-          <div >Coste del desafío ${this.price}€</div>
+          <div>${t('main-world-tour-events-duels-media')}: ${this.mediaSquad}</div>
+          <div>${t('main-world-tour-events-duels-cost')}:${this.price}€</div>
         </div>
       </div>
     `;

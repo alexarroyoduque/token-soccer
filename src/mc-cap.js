@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import {t} from './helpers/helpers.js'
 import './mc-button.js';
 
 
@@ -290,7 +291,7 @@ export class McCap extends LitElement {
           <div class="media ${this.media === this.mediaReal}">${this.mediaReal}</div>
         </div>
         <div class="middle-section">
-          <div class="level">Nivel: ${this.level}</div>
+          <div class="level">${t('main-world-tour-squad-level')}: ${this.level}</div>
           <div class="assign">
             <span ?hidden=${this.points === 0}>Puntos disponibles</span>
           </div>

@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import {getSquadMedia, filterByIds, findIndex, calculatePerformance} from './helpers/helpers.js'
+import {getSquadMedia, filterByIds, findIndex, calculatePerformance, t} from './helpers/helpers.js'
 
 import { map } from 'lit/directives/map.js';
 
@@ -140,7 +140,7 @@ export class McWorldSquad extends LitElement {
       <mc-template ?showActionBarBelow=${!this.isReservesOpen ? true : false} @reservesToggle=${this.handleReservesToggle}>
         <div slot="header">
           <mc-world-head-submenu
-            title=${!this.isReservesOpen ? 'Alineación' : 'Reservas'}
+            title=${!this.isReservesOpen ? t('main-world-tour-squad') : t('main-world-tour-squad-reserves')}
             colorTitle="var(--theme-color-yellow)"
             media=${getSquadMedia(this.worldTeam.caps, this.worldTeam.starterIds)}
             navigation="worldTourMain"
@@ -206,21 +206,21 @@ export class McWorldSquad extends LitElement {
         <div slot="footer-left" class="section">
           <mc-button
             mode="mini"
-            text="vista"
+            text=${t('main-world-tour-squad-view')}
             action='view'
           ></mc-button>
         </div>
         <div slot="footer-center" class="section">
           <mc-button
             mode="mini"
-            text="formación"
+            text=${t('main-world-tour-squad-tactic')}
             action='formation'
           ></mc-button>
         </div>
         <div slot="footer-right" class="section">
           <mc-button
             mode="mini"
-            text="${!this.isReservesOpen ? 'reservas' : 'convocatoria'}"
+            text="${!this.isReservesOpen ? t('main-world-tour-squad-reserves') : t('main-world-tour-squad-starters')}"
             action='reservesToggle'
           ></mc-button>
         </div>

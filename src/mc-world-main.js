@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import {getSquadMedia} from './helpers/helpers.js'
+import {getSquadMedia, t} from './helpers/helpers.js'
 
 import './mc-world-head.js';
 import './mc-button-core.js';
@@ -46,44 +46,44 @@ export class McWorldMain extends LitElement {
             colorTitle="var(--theme-color-yellow)"
             media=${getSquadMedia(this.worldTeam.caps, this.worldTeam.starterIds)}
             cash="${this.worldTeam.cash}"
-            competition="Sin liga seleccionada"
+            competition="--"
             colorDescription="var(--theme-color-yellow)"
           ></mc-world-head>
         </div>
         <div slot="main" class="buttons">
           <mc-button-core
-            title="Mi equipo"
-            description="Palmarés e historial de partidos"
+            title=${t('main-world-tour-team')}
+            description=${t('main-world-tour-team-description')}
             image="https://cdn.pixabay.com/photo/2015/02/24/20/52/bottle-caps-647830_1280.jpg"
             navigation="about"
           ></mc-button-core>
           <mc-button-core
-            title="Plantilla"
-            description="Revisa tu alineación, tácticas y asigna experiencia"
+            title=${t('main-world-tour-squad')}
+            description=${t('main-world-tour-squad-description')}
             image="https://www.pizarras-digitales.com/wp-content/uploads/2024/04/pizarra_futbol.jpg"
             navigation="worldTourSquad"
           ></mc-button-core>
           <mc-button-core
-            title="Eventos"
-            description="Participa en diferentes desafíos: amistosos, ligas, torneos..."
+            title=${t('main-world-tour-events')}
+            description=${t('main-world-tour-events-description')}
             image="https://cdn.pixabay.com/photo/2023/06/08/13/31/balls-8049598_1280.jpg"
             navigation="worldTourEvents"
           ></mc-button-core>
           <mc-button-core
-            title="Servicios"
-            description="Visita la tienda o el taller para poner a punto tu plantilla"
+            title=${t('main-world-tour-services')}
+            description=${t('main-world-tour-services-description')}
             image="https://cdn.pixabay.com/photo/2017/07/11/18/07/market-2494520_1280.jpg"
             navigation="about"
           ></mc-button-core>
           <mc-button-core
-            title="Colección"
-            description="¿Conseguirás todas las chapas del juego?"
+            title=${t('main-world-tour-collection')}
+            description=${t('main-world-tour-collection-description')}
             image="https://cdn.pixabay.com/photo/2016/11/18/13/14/boxes-1834406_1280.jpg"
             navigation="about"
           ></mc-button-core>
           <mc-button-core
-            title="Información"
-            description="Resuelve todas las dudas sobre este modo de juego"
+            title=${t('main-world-tour-info')}
+            description=${t('main-world-tour-info-description')}
             image="https://cdn.pixabay.com/photo/2017/07/10/23/43/question-mark-2492009_1280.jpg"
             navigation="about"
           ></mc-button-core>
@@ -91,7 +91,7 @@ export class McWorldMain extends LitElement {
         <div slot="footer-left" class="section">-</div>
         <div slot="footer-center" class="section">-</div>
         <div slot="footer-right" class="section">
-          <mc-button mode="mini" text="Salir" navigation="worldWelcome"></mc-button>
+          <mc-button mode="mini" text=${t('main-world-tour-exit')} navigation="worldWelcome"></mc-button>
         </div>
       </mc-template>
     `;

@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { getSquadMedia, simulateMatch } from './helpers/helpers.js';
+import { getSquadMedia, simulateMatch, t } from './helpers/helpers.js';
 import './mc-match-result.js';
 
 import './mc-world-head-submenu.js';
@@ -67,9 +67,9 @@ export class McWorldEventsDuelMatch extends LitElement {
   getResultMessage(result){
     let message = '';
     if (result.team1.goals > result.team2.goals) {
-      message = `Has conseguido a ${this.selectedDuel.name}`;
+      message = `${t('main-world-tour-events-duels-win')} ${this.selectedDuel.name}`;
     } else {
-      message = `Duelo no superado`;
+      message = t('main-world-tour-events-duels-lose');
     }
 
     return message;
@@ -102,7 +102,7 @@ export class McWorldEventsDuelMatch extends LitElement {
       <mc-template @playMatch=${this.handlePlayMatch}>
         <div slot="header">
           <mc-world-head-submenu
-            title="Duelo: resultado"
+            title=${t('main-world-tour-events-duels')}
             colorTitle="var(--theme-color-yellow)"
             media=${getSquadMedia(this.worldTeam.caps, this.worldTeam.starterIds)}
             navigation="worldTourEventsDuel"
@@ -122,7 +122,7 @@ export class McWorldEventsDuelMatch extends LitElement {
         <div slot="footer-right">
           <mc-button
             mode="mini"
-            text="Volver"
+            text=${t('main-world-tour-new-back')}
             navigation='worldTourEventsDuel'
           ></mc-button>
         </div>

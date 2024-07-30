@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { getFormation, calculatePerformance,  } from './helpers/helpers.js'
+import { getFormation, calculatePerformance, t} from './helpers/helpers.js'
 
 import './mc-title-jumbo.js';
 import './mc-button.js';
@@ -216,18 +216,19 @@ export class McWorldNew extends LitElement {
       <mc-title-jumbo
           title="WORLD TOUR"
           colorTitle="var(--theme-color-yellow)"
-          description="Camino a la gloria"
+          description=${t('main-world-tour-new-subtitle')}
           colorDescription="var(--theme-color-yellow)"
         ></mc-title-jumbo>
         <label>
-          Indica el nombre de tu equipo
+          ${t('main-world-tour-new-team-name')}
+          
           <input autofocus type="text" @input=${this._handleInput}>
         </label>
         <ul>
           <li>
             <mc-button
               @worldCreateTeam=${this._handleAction}
-              text="continuar"
+              text=${t('main-world-tour-new-continue')}
               action='worldCreateTeam'
               color="var(--theme-color-blue)"
               ?disabled=${!this.teamName ? true : false}
@@ -235,8 +236,8 @@ export class McWorldNew extends LitElement {
           </li>
           <li>
             <mc-button
-              text="volver"
-              navigation='menu'
+              text=${t('main-world-tour-new-back')}
+              navigation='main'
               color="var(--theme-color-gray-light)"
               ></mc-button>
           </li>

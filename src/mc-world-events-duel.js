@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 import { map } from 'lit/directives/map.js';
-import {getSquadMedia, filterByIds, findIndex, calculatePerformance} from './helpers/helpers.js'
+import {getSquadMedia, filterByIds, findIndex, calculatePerformance, t} from './helpers/helpers.js'
 
 import './mc-world-head-submenu.js';
 import './mc-button-core.js';
@@ -75,7 +75,7 @@ export class McWorldEventsDuel extends LitElement {
       <mc-template ?showActionBar=${true} @playMatch=${this.handlePlayMatch}>
         <div slot="header">
           <mc-world-head-submenu
-            title="Duelos"
+            title=${t('main-world-tour-events-duels')}
             colorTitle="var(--theme-color-yellow)"
             media=${getSquadMedia(this.worldTeam.caps, this.worldTeam.starterIds)}
             navigation="worldTourEvents"
@@ -105,7 +105,7 @@ export class McWorldEventsDuel extends LitElement {
             <mc-button
               ?disabled=${!this.selectedDuel.name}
               mode="mini"
-              text="Alineación rival"
+              text=${t('main-world-tour-events-duels-squad')}
               action='ss'
             ></mc-button>
         </div>
@@ -113,7 +113,7 @@ export class McWorldEventsDuel extends LitElement {
           <mc-button
             ?disabled=${!this.selectedDuel.name || this.worldTeam.cash <= this.selectedDuel.price }
             mode="mini"
-            text="Jugar partido"
+            text=${t('main-world-tour-events-duels-play')}
             .payload=${this.selectedDuel}
             navigation='worldTourEventsDuelMatch'
             action="playMatch"

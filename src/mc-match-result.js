@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import {t} from './helpers/helpers.js'
 
 export class McMatchResult extends LitElement {
 

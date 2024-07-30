@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import {t} from './helpers/helpers.js'
 import './mc-title-jumbo.js';
 import './mc-button.js';
 
@@ -50,27 +51,27 @@ export class McWorldWelcome extends LitElement {
       <mc-title-jumbo
           title="WORLD TOUR"
           colorTitle="var(--theme-color-yellow)"
-          description="Camino a la gloria"
+          description=${t('main-world-tour-new-subtitle')}
           colorDescription="var(--theme-color-yellow)"
         ></mc-title-jumbo>
         <ul>
           <li>
             <mc-button
-              text="continuar"
+              text=${t('main-world-tour-new-continue')}
               navigation='worldTourMain'
               color="var(--theme-color-blue)"
               ></mc-button>
           </li>
           <li>
             <mc-button
-              text="nueva partida"
+              text=${t('main-world-tour-new-game')}
               navigation='worldTourNew'
               color="var(--theme-color-blue)"
               ></mc-button>
           </li>
           <li>
             <mc-button
-              text="volver"
+              text=${t('main-world-tour-new-back')}
               navigation='menu'
               color="var(--theme-color-gray-light)"
               ></mc-button>

@@ -1,3 +1,6 @@
+import {lang as en} from '../locales/en.js';
+import {lang as es} from '../locales/es.js';
+
 import { simulateMatch } from './match.js';
 import {
   formation as formation_4_4_2,
@@ -65,11 +68,18 @@ function getFormation(tactic){
   return formations[tactic];
 }
 
+function t(key) {
+  let selectedLang = localStorage.tokenSoccerLang;
+  let locales = {es, en};
+  return locales[selectedLang][key]
+}
+
 export {
   filterByIds,
   findIndex,
   calculatePerformance,
   getSquadMedia,
   getFormation,
-  simulateMatch
+  simulateMatch,
+  t
 }
